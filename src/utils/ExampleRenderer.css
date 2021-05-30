@@ -1,0 +1,19 @@
+.example-renderer {
+  margin: 0.5em;
+  padding: 0.5em;
+
+  border: 1px solid black;
+  background: #eee;
+}
+
+.example-renderer__title {
+
+}
+
+.example-renderer__el {
+  margin: 1em 0;
+  padding: 0.5em;
+
+  border: 1px solid black;
+  background: #e4e4e4;
+}
