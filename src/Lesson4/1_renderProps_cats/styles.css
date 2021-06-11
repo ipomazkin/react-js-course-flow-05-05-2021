@@ -1,0 +1,45 @@
+.cat {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  font-size: 3em;
+}
+
+.cat--no-fixed {
+
+}
+
+.cat__cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feed {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  font-size: 2em;
+  pointer-events: none;
+}
+
+.feed__cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.monitor {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  padding: 10px;
+
+  background: #eee;
+  min-width: 100px;
+}
