@@ -9,5 +9,7 @@ import ExampleRendererLesson4Topic1 from "./Lesson4/1_renderProps_cats";
 import ExampleRendererLesson4Topic2 from "./Lesson4/2_context_theme";
 import { Example as ExampleRendererLesson4Topic3 } from "./Lesson4/3_fnComponents_hooks";
 import { Example as ExampleRendererLesson4Topic4 } from "./Lesson4/4_customHooks";
+import { Example as ExampleRendererLesson4Topic5 } from "./Lesson4/5_reactHookForm";
+import { Example as ExampleRendererLesson4Topic6 } from "./Lesson4/6_reactQuery";
 
-ReactDOM.render(<ExampleRendererLesson4Topic4 />, document.getElementById('root'));
+ReactDOM.render(<ExampleRendererLesson4Topic6 />, document.getElementById('root'));
