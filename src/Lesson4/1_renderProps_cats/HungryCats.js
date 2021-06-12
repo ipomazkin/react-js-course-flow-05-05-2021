@@ -26,7 +26,7 @@ class HungryCats extends PureComponent {
     return (
       <MouseWatcher>{
         ({x, y}) => cats.map(c => (
-          <Cat
+          <SpringCat
             key={c.id}
             x={x}
             y={y}
@@ -34,7 +34,7 @@ class HungryCats extends PureComponent {
             defaultY={c.startY}
             speed={c.speed}
             delay={c.delay}
-          >{c.icon}</Cat>
+          >{c.icon}</SpringCat>
         ))
       }</MouseWatcher>
     );

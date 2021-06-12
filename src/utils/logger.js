@@ -1,3 +1,5 @@
+import { useCallback } from "react";
+
 export function classComponentLogger(label = null, toLog = {}, options = {
   color: '#333333',
   level: 1
@@ -13,4 +15,21 @@ export function makeClassComponentLogger(context, options = {}) {
     return handler(label, toLog, options);
   };
   return fn;
+}
+
+export function useLogger(name = "", options = {
+  color: '#333333',
+  level: 1
+}) {
+  const log = useCallback((label = null, toLog = {}, localOptions = {}) => {
+    localOptions = {
+      ...options,
+      ...localOptions,
+    };
+    let level = new Array(localOptions.level).fill('-', 0, localOptions.level).join(''),
+      style = `color: ${localOptions.color}; font-weight: 600;`;
+    console.log(`%c${level}> ${name}${label ? `, ${label}: %o` : '%o'}`, style, toLog);
+  }, [name, options]);
+
+  return log;
 }
