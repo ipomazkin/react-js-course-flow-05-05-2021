@@ -22,6 +22,7 @@ class App extends PureComponent {
 
     return (
       <div className="App">
+        <img src={logo} alt=""/>
         <h1 ref={(el) => console.log("App h1: ", el)}>{this.state.title}</h1>
         <RequestExample />
         <button onClick={this.handleClick}>change title</button>

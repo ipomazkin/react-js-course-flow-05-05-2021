@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import Button from "./Button";
+import ButtonRenderProp from "./ButtonRenderProp";
 
 class Header extends PureComponent {
   render() {
@@ -10,9 +11,9 @@ class Header extends PureComponent {
         <div className="header__cont">
           <h1 className="header__logo">Logo here</h1>
           <div className="header__burger">
-            <Button>toggle</Button>
-            <Button>foo</Button>
-            <Button>bar</Button>
+            <ButtonRenderProp>toggle</ButtonRenderProp>
+            <ButtonRenderProp>foo</ButtonRenderProp>
+            <ButtonRenderProp>bar</ButtonRenderProp>
           </div>
         </div>
       </header>

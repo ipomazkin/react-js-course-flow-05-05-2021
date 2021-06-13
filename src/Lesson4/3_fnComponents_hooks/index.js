@@ -10,6 +10,7 @@ import { ExampleUseContext } from "./ExampleUseContext";
 import { ExampleUseRef } from "./ExampleUseRef";
 import { ExampleUseMemo } from "./ExampleUseMemo";
 import { ExampleUseImperativeHandle } from "./ExampleUseImperativeHandle";
+import { MainExample } from "./MainExample";
 
 export function Example() {
   const log = useLogger("Example");
@@ -37,8 +38,9 @@ export function Example() {
               {/*<ExampleUseLayoutEffect />*/}
               {/*<ExampleUseContext />*/}
               {/*<ExampleUseRef />*/}
-              <ExampleUseMemo />
-              {/*<ExampleUseImperativeHandle />*/}
+              {/*<ExampleUseMemo />*/}
+              <ExampleUseImperativeHandle />
+              {/*<MainExample />*/}
             </div>
           )}
 

@@ -13,7 +13,8 @@ export const theme = {
     default: 10,
     small: 5,
     big: 20,
-  }
+  },
+  backgroundColor: "red",
 };
 
 export const themeMobile = {
@@ -23,7 +24,8 @@ export const themeMobile = {
     default: 20,
     small: 15,
     big: 30,
-  }
+  },
+  backgroundColor: "blue",
 };
 
 export const ThemeContext = createContext(theme);

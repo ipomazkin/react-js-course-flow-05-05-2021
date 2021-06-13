@@ -46,6 +46,7 @@ export function ExampleUseMemo() {
   const log = useLogger("ExampleUseMemo",{ level: 2, color: "blue" });
   log("render started");
 
+
   return (
     <div style={{ border: "2px solid black", padding: "10px", margin: "10px" }} className="example-renderer">
       <div className="example-renderer__cont">

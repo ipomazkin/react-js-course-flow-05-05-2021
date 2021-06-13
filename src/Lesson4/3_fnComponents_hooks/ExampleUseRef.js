@@ -45,7 +45,7 @@ function CountdownCorrect({ seconds = 10 }) {
   log("render progress", { timerIntervalRef, remain, remainRef, setRemainRef });
 
   useEffect(() => {
-    if (remain === 0) clearInterval(timerIntervalRef.current);
+    if (remainRef.current === 0) clearInterval(timerIntervalRef.current);
     remainRef.current = remain;
     setRemainRef.current = setRemain;
   }, [setRemain, remain]);
@@ -78,8 +78,8 @@ export function ExampleUseRef() {
     <div style={{ border: "2px solid black", padding: "10px", margin: "10px" }} className="example-renderer">
       <div className="example-renderer__cont">
 
-        <CountdownWrong seconds={10} />
-        {/*<CountdownCorrect seconds={10} />*/}
+        {/*<CountdownWrong seconds={10} />*/}
+        <CountdownCorrect seconds={10} />
 
       </div>
     </div>
