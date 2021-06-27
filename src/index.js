@@ -12,5 +12,6 @@ import { Example as ExampleRendererLesson4Topic4 } from "./Lesson4/4_customHooks
 import { Example as ExampleRendererLesson4Topic5 } from "./Lesson4/5_reactHookForm";
 import { Example as ExampleRendererLesson4Topic6 } from "./Lesson4/6_reactQuery";
 import { Lesson5 as ExampleRendererLesson5 } from "./Lesson5/App";
+import { App as ExampleRendererLesson6 } from "./Lesson6";
 
-ReactDOM.render(<ExampleRendererLesson5 />, document.getElementById('root'));
+ReactDOM.render(<ExampleRendererLesson6 />, document.getElementById('root'));
