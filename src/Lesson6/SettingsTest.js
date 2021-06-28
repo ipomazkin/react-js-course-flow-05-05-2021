@@ -7,6 +7,11 @@ export function SettingsTest() {
   const items = useSelector(SettingsDuck.selectItems);
   const dispatch = useDispatch();
 
+  console.log('-----------------', {
+    items,
+    dispatch,
+  });
+
   const addItem = ({ title }) => {
     dispatch(SettingsDuck.addItem({
       title,

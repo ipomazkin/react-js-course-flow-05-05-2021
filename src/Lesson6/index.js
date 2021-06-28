@@ -15,14 +15,14 @@ export function App() {
     <Provider store={store}>
       <div className="app-root">
         <ClassComponent />
-        <div><hr/></div>
-        <FunctionalComponent />
-        <div><hr/></div>
-        <SettingsTest />
-        <div><hr/></div>
-        <SettingsWithHelpersTest />
-        <div><hr/></div>
-        <DemoComponent />
+        {/*<div><hr/></div>*/}
+        {/*<FunctionalComponent />*/}
+        {/*<div><hr/></div>*/}
+        {/*<SettingsTest />*/}
+        {/*<div><hr/></div>*/}
+        {/*<SettingsWithHelpersTest />*/}
+        {/*<div><hr/></div>*/}
+        {/*<DemoComponent />*/}
       </div>
     </Provider>
   );

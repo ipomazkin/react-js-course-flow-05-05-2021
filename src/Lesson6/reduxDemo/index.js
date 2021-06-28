@@ -2,6 +2,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import * as ExampleDuck from './example.duck';
 import * as SettingsDuck from './settings.duck';
 import * as SettingsWithHelpersDuck from './settingsWithHelpers.duck';
+import produce from "immer";
 
 export function logger(store) { // функция-middleware
   return next => action => {
@@ -30,11 +31,12 @@ export const store = createStore(rootReducer, undefined, composedEnhancers); // 
 
 window.store = store;
 window.ExampleDuck = ExampleDuck;
+window.produce = produce;
 
-store.subscribe(() => {
-  console.log('----------------- state have been changed', store.getState());
-});
-
-store.dispatch({
-  type: 'test'
-});
+// store.subscribe(() => {
+//   console.log('----------------- state have been changed', store.getState());
+// });
+//
+// store.dispatch({
+//   type: 'test'
+// });

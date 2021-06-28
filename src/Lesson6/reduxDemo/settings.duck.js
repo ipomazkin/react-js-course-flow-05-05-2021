@@ -51,6 +51,10 @@ const initialState = {
   isOpened: false,
 };
 
+const reducerReactionsMap = {
+  [ADD_ITEM]: (state, action) => state,
+};
+
 // reducer
 export default function reducer(state = initialState, action) {
   let { type, id, item, key, value } = action;

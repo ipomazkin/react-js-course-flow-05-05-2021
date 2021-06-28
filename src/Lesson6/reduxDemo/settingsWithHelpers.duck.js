@@ -51,6 +51,8 @@ export const { addItem, updateItem, removeItem, setField } = slice.actions;
 const reducer = slice.reducer;
 export default reducer;
 
+window.slice = slice;
+
 // selectors
 export const selectItems = state => state[NAMESPACE].items;
 export const selectIsOpened = state => state[NAMESPACE].isOpened;

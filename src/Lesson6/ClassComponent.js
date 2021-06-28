@@ -18,7 +18,7 @@ const mapDispatchToProps = (dispatch) => ({
 
 class ClassComponent extends PureComponent {
   render() {
-    let { setMenuIsOpen, isMenuOpened } = this.props;
+    let { isMenuOpened, setMenuIsOpen } = this.props;
 
     return (
       <div className="some-class-component">
