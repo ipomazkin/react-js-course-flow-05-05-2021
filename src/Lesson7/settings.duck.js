@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { all, call, fork, put, select, take, takeEvery, spawn, join, cancel } from 'redux-saga/effects';
+import { all, call, fork, put, select, take, takeEvery, takeLatest, takeLeading, spawn, join, cancel } from 'redux-saga/effects';
 import { pause } from "./utils";
 
 // namespace
@@ -99,7 +99,7 @@ function* callExampleWorker() {
 
 function* forkExampleWorker() {
   console.log('---> forkExampleWorker started');
-  let task = yield fork(getDataSaga, false);
+  let task = yield fork(getDataSaga, true);
   console.log('---> forkExampleWorker finished', task);
 }
 
@@ -112,6 +112,7 @@ function* spawnExampleWorker() {
 function* joinExampleWorker() {
   console.log('---> joinExampleWorker started');
   let task = yield fork(getDataSaga, false);
+  console.log('---> joinExampleWorker process');
   let response = yield join(task);
   console.log('---> joinExampleWorker finished', response);
 }
@@ -127,13 +128,13 @@ function* cancelExampleWorker() {
 // root saga
 export function* saga() {
   yield all([
-    takeExampleSaga(),
+    // takeExampleSaga(),
     // takeExample2Saga(),
     // takeEveryExampleWatcher(),
     // takeLatest(set, takeLatestExampleWorker),
     // takeLeading(set, takeLeadingExampleWorker),
-    // takeEvery(set, selectAndPutExampleWorker),
-    // takeEvery(set, callExampleWorker),
+    takeEvery(set, selectAndPutExampleWorker),
+    takeEvery(set, callExampleWorker),
     // takeEvery(set, forkExampleWorker),
     // takeEvery(set, spawnExampleWorker),
     // takeEvery(set, joinExampleWorker),

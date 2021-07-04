@@ -5,12 +5,16 @@ import thunk from 'redux-thunk';
 import * as SettingsDuck from './settings.duck';
 import * as Posts1Duck from './postsBySaga.duck';
 import * as Posts2Duck from './postsByThunk.duck';
+import * as Posts1LiveDuck from './postsByThunkLive.duck';
+import * as Posts2LiveDuck from './postsBySagaLive.duck';
 
 // grab all ducks together
 const ducks = [
   SettingsDuck,
   Posts1Duck,
   Posts2Duck,
+  Posts1LiveDuck,
+  Posts2LiveDuck,
 ];
 
 // grab all reducers together
