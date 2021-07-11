@@ -7,14 +7,16 @@ import * as Posts1Duck from './postsBySaga.duck';
 import * as Posts2Duck from './postsByThunk.duck';
 import * as Posts1LiveDuck from './postsByThunkLive.duck';
 import * as Posts2LiveDuck from './postsBySagaLive.duck';
+import * as PostsDuck from './posts.duck';
 
 // grab all ducks together
 const ducks = [
   SettingsDuck,
-  Posts1Duck,
-  Posts2Duck,
-  Posts1LiveDuck,
-  Posts2LiveDuck,
+  // Posts1Duck,
+  // Posts2Duck,
+  // Posts1LiveDuck,
+  // Posts2LiveDuck,
+  PostsDuck,
 ];
 
 // grab all reducers together
