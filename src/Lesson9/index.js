@@ -4,6 +4,7 @@ import { Form as WatchForm } from './reactHookForm/watch/prepared/Form';
 import { Form as RepeatersForm } from './reactHookForm/repeaters/prepared/Form';
 import { Form as ValidationForm } from './reactHookForm/validation/prepared/Form';
 import CssBaseline from "@material-ui/core/CssBaseline";
+import { EmailValidation } from "./EmailValidation";
 
 export function Lesson9() {
   const handleSubmit = (values) => {
@@ -13,7 +14,8 @@ export function Lesson9() {
   return (
     <div className="">
       <CssBaseline />
-      <ValidationForm onSubmit={handleSubmit} />
+      {/*<ValidationForm onSubmit={handleSubmit} />*/}
+      <ValidationForm />
     </div>
   );
 }

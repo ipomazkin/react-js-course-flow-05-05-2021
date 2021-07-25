@@ -38,7 +38,7 @@ const validationSchema = yup.object().shape({
   firstName: yup.string().required(defaultRequiredMessage),
   lastName: yup.string().required(defaultRequiredMessage),
   subscribe: yup.boolean(),
-  email: yup.string().email().when("subscribe", {
+  email: yup.string().email('Email is wrong').when("subscribe", {
     is: true,
     then: yup.string().required(defaultRequiredMessage),
   }),
