@@ -14,5 +14,6 @@ import './index.css';
 // import { Lesson5 as ExampleRendererLesson5 } from "./Lesson5/App";
 // import { App as ExampleRendererLesson6 } from "./Lesson6";
 import { Lesson7 } from "./Lesson7";
+import { Lesson9 } from "./Lesson9";
 
-ReactDOM.render(<Lesson7 />, document.getElementById('root'));
+ReactDOM.render(<Lesson9 />, document.getElementById('root'));
